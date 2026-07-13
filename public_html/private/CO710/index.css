@@ -1,0 +1,77 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.open {
+    width: 700px;
+    height: 550px;
+    text-align: center;
+
+}
+
+main {
+    background-size: 150%;
+    border-radius: 40px;
+    
+}
+
+.play {
+    background-image: url("mainsrc/b.png");
+    background-size: 85%;
+    background-position-x: center;
+    background-position-y: -50px;
+    height: 500px;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.text {
+    margin-top: 0;
+}
+
+main, a, a:visited{
+    color: rgb(136, 108, 108);
+}
+
+a:hover {
+    color: rgb(210, 208, 208);
+    text-decoration: underline;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("mainsrc/glow.jpg");
+    background-size: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+ul {
+  list-style-type: none; /* Removes the bullet point */
+  padding-left: 0;       /* Removes the default left tab indentation */
+  margin-left: 0;        /* Ensures no outer indentation remains */
+  margin-top: 2em;
+}
+
+
+/* DECORISODFISJDOF*/
+
+h3 {
+    font-size: 3em;
+    margin: 1em 0 0 0;
+}
+
+.cute {
+    margin: 2em 0 0 0;
+}

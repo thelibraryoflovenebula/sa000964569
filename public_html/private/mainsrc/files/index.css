@@ -1,0 +1,69 @@
+#whole {
+    background-image: url("../sage.jpg");
+    background-size: 50%;
+    width: 700px;
+    height: 100%;
+    align-content: center;
+    color: rgb(129, 141, 121);
+    padding: 0 1em 3em 1em;
+    border-radius: 2em;
+    border: 5px solid rgb(153, 170, 155);
+    text-align: center;
+}
+
+ul {
+    display: flexbox;
+    flex-wrap: flex;
+    flex-direction: column;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: rgb(129, 141, 121);
+}
+
+a:hover {
+    color: rgb(194, 200, 190);
+    text-decoration: underline;
+}
+
+a, #whole {
+    font-size: 2em;
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("../backthe.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;  
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* DECORATIONSNSDFSDLF;KJ*/
+
+h3 {
+    margin: 1em 0 0 0;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 3px 3px rgb(210, 210, 210);
+    
+}
+
+.under {
+    margin: 0 0 1em 0;
+
+}
+
+.explain {
+    font-size: 20px;
+}

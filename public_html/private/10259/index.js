@@ -65,6 +65,13 @@ let openhtml = function openhtml() {
 }
 
 
+//html opener
+let backbutton = document.getElementById("backtab");
+let backhtml = function back() {
+    window.location.href = "../index.html";
+}
+
+
 
 
 
@@ -79,8 +86,9 @@ ass3button.addEventListener("click", ass3);
 
 
 //githubbutton.addEventListener("click", github); // okay so it turns out im pretty sure github turned off iframe 
-artbutton.addEventListener("click", art)
-openhtmlbutton.addEventListener("click", openhtml)
+artbutton.addEventListener("click", art);
+openhtmlbutton.addEventListener("click", openhtml);
+backbutton.addEventListener("click", backhtml);
 
 
 // if you want a specific one to be default write this at the VERY FUCKING END PATRICK 
