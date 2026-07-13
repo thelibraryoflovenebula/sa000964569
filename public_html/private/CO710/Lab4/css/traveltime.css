@@ -1,0 +1,113 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+	/* footer  */
+	/* PARENT DIVS */
+	
+	.footer{
+		display: grid;
+		grid-template-columns: 1fr 3fr 1fr;
+		grid-template-rows: auto;
+	}
+	
+	.rightB{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
+		
+	footer{
+		background-image: url("../images/newhampshire.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;   
+		background-position: center; /* had to research to make sure the footer image behaves*/
+		padding: 2em;
+	} 
+
+	/* CHILD DIVS */
+	
+	.leftB{
+		grid-column: 1;
+	}
+	
+	.middleB{
+		grid-column: 2;
+		text-align: center;
+		align-items: center;
+	}
+	
+	.rightB{
+		grid-column: 3;
+	}
+	
+	.rightB1{
+		grid-row: 1;
+	}
+	
+	.rightB2{
+		grid-row: 2;
+	}
+
+
+	h1 {
+		color: #0172BA;
+		font-family: Sans-serif;
+		margin: 4em 0 0 0;
+	}
+	
+
+	/* nav rules */
+
+	nav {
+		background-color: #CEECFE;
+		border-top: 2px solid #0172BA;
+		border-bottom: 2px solid #0172BA;
+		padding: 1.5em 0 1.5em 0;
+		text-align: center;
+		align-items: center;
+		position: sticky;
+		width: 100%;
+		top: 0;
+	}
+	
+	.navicons{
+		background-color: white;
+		color: #0172BA;
+		border: 2px solid #0172BA;
+		padding: 10px 20px 10px 20px;
+		border-radius: 70px 0 70px 0;
+		display: inline;
+		text-decoration: none;
+	}
+	
+	.navicons:hover {
+		background-color: #ECF7FE;
+	}
+	
+	/* header rules */
+	
+	header{
+		background-color: white;
+		border: 2px solid white;
+		padding: 0 0 5em 0;
+		}
+	
+	.travellogo {
+		float: left;
+	}
+	
+	.signin {
+		float: right;
+		background-color: #0172BA;
+		border-radius: 50px;
+		padding: 10px 15px 10px 15px;
+		color: white;
+		margin: 15px 10px 0 0;
+		text-decoration: none;	
+	}
+	
+	.signin:hover {
+		background-color: #089247;
+		text-decoration: none;		
+	}

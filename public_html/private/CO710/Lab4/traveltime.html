@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> <meta charset="UTF-8">
+	<title> Travel Time </title>
+	
+	<link href="css/traveltime.css" rel="stylesheet">
+	<!-- 
+		STATEMENT OF AUTHORSHIP CO710
+		I Neil Patrick Olaires 000964569 hereby declare
+		the originality of this piece of work, that I hath birthed
+		it through thine own eyes and hands, sculpted with my own intellect, 
+		for shall it hath not been foreseen by the insidious eyes of thieves,
+		and followed the code of conduct designed to keep the ethics within
+		the educational system. and not tainted by the mathematical machinery
+		previously named as "ChatGPT"
+		
+		November 6th, 2025 
+		
+		
+	-->
+	
+<!--_______________________________ EMBEDDED STYLE SHEET ________________________________-->
+
+<style>
+	/* FIRST MAIN CONTENT GRID RULES*/
+	/* PARENT DIVS*/
+	
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: Sans-serif;
+	}
+
+	.mainA{ 
+		display: grid;
+		grid-template-columns: minmax(200px, 300px) 1fr 150px; 
+		gap: 10px;
+		max-width: 1200px;
+		margin-top: 1em;
+	} 
+	
+	.SmainA{
+		display: flex;
+		justify-content: center;
+	}
+	
+	
+	.leftA{
+		grid-column: 1;
+		gap: 10px;
+	}
+	
+	.middleA{
+		grid-column: 2;
+		display: grid;
+		grid-template-rows: auto auto;
+		gap: 10px;
+		align-content: start;
+	}
+
+	.rightA{
+		grid-column: 3;
+		/* 
+		display: grid;
+		grid-template-rows: auto auto;
+		*/
+		gap: 10px;
+		align-items: end; 
+	}
+	
+	.midcontent{
+		grid-row: 1;
+	}
+	
+	.traillist{
+		grid-row: 2;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		background-color: #CEECFE;
+		border: 1px solid black;
+		margin: 1em;
+		align-content: start;
+	}
+	
+	.trailtitle{
+		grid-column: 1 /span 2;
+		grid-row: 1;
+		margin-bottom: 2px;
+		align-content: start;
+	}
+	
+	.trailtitle h2{
+		margin: 0;
+		text-align: center;
+	} 
+	
+	.trailchildleft, .trailchildright{
+		padding: 0 0 0 1em;
+		margin: 1em;
+		align-content: start;
+		
+	}
+	
+	.trailchildleft{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	
+	.trailchildright{
+		grid-column: 2;
+		grid-row: 2;
+		border-left: 1px solid black;
+		padding-left: 2em;
+	}
+	
+	/* SECOND MAIN CONTENT GRID RULES*/
+	/* PARENT AND DIVS*/
+	.mainB{
+		display: block;
+	}
+	
+	.galleries{
+		grid-row: 1;
+	}
+	
+	.credits{
+		grid-row: 2;
+	}
+		
+
+	/* image rules */
+	
+	.Rimg{
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 20px 0;
+
+	}
+	
+	.M1img{
+		float: left;
+	}
+	
+	.M2img{
+		float: right;
+	}
+	
+	.M1img, .M2img{
+		margin: 1em;
+	}
+	
+	.rightA1{
+		grid-row: 1;
+	}
+	
+	.rightA2{
+		grid-row: 2;
+	}
+	
+	/* text rules */
+	
+	.title {
+		background-color: #0172BA;
+		text-align: center;
+		color: white;
+	}
+	
+	.trailh2 {
+		text-align: center;
+	}
+	
+	.foot {
+		border-bottom: 2px solid #0172BA;
+		display: block;
+		width: 100%;
+	}
+	
+
+	h5 {
+		text-align: center;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+		
+	/* gallery */
+	
+	.galleries {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.gallery {
+		border: 2px solid black;
+		margin: 6px;
+	}
+
+	.credits {
+		border-top: 2px solid #0172BA;
+		border-bottom: 2px solid #0172BA;
+		margin: 20px 0 20px 0;
+	}
+	
+
+</style>
+
+
+<!--_______________________________ EMBEDDED STYLE SHEET ________________________________-->
+
+	</head>
+	
+	
+	<body>
+<!--Sign-in -->		
+
+<header>
+
+	<img class="travellogo" src="images/logos/traveltimehorizontal.png" alt="logo" height="70">
+	<a href="#" class="signin"> Sign-in </a>
+	
+
+</header>
+
+
+
+
+<nav>
+	<ul class="navlist">
+		<li class="navicons"> About Us </li>
+		<li class="navicons"> Countries </li>
+		<li class="navicons"> Seminars </li>
+		<li class="navicons"> Photos </li>
+		<li class="navicons"> Travel </li>
+	</ul>
+</nav>
+
+
+
+
+
+
+
+
+<section class="SmainA"> <!-- seperating gallery from main content-->
+<div class="mainA"> <!-- parent for main content-->
+	
+	
+	
+	
+	
+	
+<div class="leftA"> <!-- left sidebar -->
+	<h2 class="title"> Canoeing </h2>
+	
+	<p> Canoeing is an activity which involves paddling a canoe with a single-bladed paddle. Common meanings of the term are limited to when the canoeing is the central purpose of the activity. Broader meanings include when it is combined with other activities such as canoe camping, or where canoeing is merely a transportation method used to accomplish other activities. Most present-day canoeing is done as or as a part of a sport or recreational activity. In some parts of Europe canoeing refers to both canoeing and kayaking, with a canoe being called an open canoe. <br> <br> 
+	
+	Canoes were developed by cultures all over the world, including some designed for use with sails or outriggers. Until the mid-1800s the canoe was an important means of transport for exploration and trade, and in some places it still is used as such, perhaps with the addition of an outboard motor. Where the canoe played a key role in history, such as the northern United States, Canada, and New Zealand, it remains an important theme in popular culture. </p>
+	
+	<h2 class="title"> Types of Canoes </h2>
+	
+	<ul>
+		<li> Sprint </li> 
+		<li> Slalom and wildwater </li>
+		<li> Marathon </li>
+		<li> General Recreation </li>
+		<li> Touring and camping </li>
+		<li> Freestyle </li>
+	</ul>
+
+</div> <!-- closing left sidebar -->
+
+
+
+
+
+<div class="middleA"> <!-- middle sidebar -->
+	<div class="midcontent">
+	<h2 class="title"> Hiking </h2>
+	<img class= "M1img" src="images/hiking150/hikingmountains150.jpg" alt="hiking mountains" title="hiking mountains">
+	
+	<p> In the United States, Canada, the Republic of Ireland, and United Kingdom, hiking means walking outdoors on a trail, or off trail, for recreational purposes. A day hike refers to a hike that can be completed in a single day. However, in the United Kingdom, the word walking is also used, as well as rambling, while walking in mountainous areas is called hillwalking. In Northern England, Including the Lake District and Yorkshire Dales, fellwalking describes hill or mountain walks, as fell is the common word for both features there. </p> <br>
+	
+	<img class= "M2img" src="images/hiking150/winterhiker150.jpg" alt="winter hiker" title="winter hiker">
+	
+	<p> Hiking sometimes involves bushwhacking and is sometimes referred to as such. This specifically refers to difficult walking through dense forest, undergrowth, or bushes, where forward progress requires pushing vegetation aside. In extreme cases of bushwhacking, where the vegetation is so dense that human passage is impeded, a machete is used to clear a pathway. The Australian term bushwalking refers to both on and off-trail hiking. Common terms for hiking used by New Zealanders are tramping (particularly for overnight and longer trips), walking or bushwalking. Trekking is the preferred word used to describe multi-day hiking in the mountainous regions of India, Pakistan, Nepal, North America, South America, Iran, and the highlands of East Africa. Hiking a long-distance trail from end-to-end is also referred to as trekking and as thru-hiking in some places. In North America, multi-day hikes, usually with camping, are referred to as backpacking. </p>
+	</div>
+	
+	
+		<div class="traillist"> <!-- parent for the little blue box-->
+			
+			<div class="trailtitle">
+				<h2 class="trailh2"> Trails - 2023/2024 </h2>
+			</div>
+				
+			<div class="trailchildleft">
+				<h3> National Parks (partial list) </h3>
+				<ul>
+					<li> Banff National Park </li>
+					<li> Cape Breton Highlands National Park </li>
+					<li> Point Pelee National Park </li>
+				</ul>
+			</div>
+			
+			<div class="trailchildright">
+				<h3> Provincial Parks (partial list) </h3>
+				<ul>
+					<li> Bronte Creek Provincial Park </li>
+					<li> Rock Point Provincial Park </li> 
+					<li> Selkirk Provincial Park </li>
+				</ul>
+			</div>
+		</div>
+</div> <!-- CLOSING for middle-->
+
+
+
+
+
+
+
+<div class="rightA"> <!-- right sidebar with images--> 
+
+	<div class="rightA1">
+		<img class="Rimg" src="images/ads/mountainsThinkBig.jpg" alt="Follow your dreams" title="Think Big"> 
+	</div>
+	
+	
+	<div class="rightA2">
+		<img class="Rimg" src="images/ads/greymountain.jpg" alt="Hike higher" title="Breathe better"> 
+	</div>
+</div> <!-- closing right sidebar -->
+
+
+
+
+
+
+</div> <!-- closing div for parent "main content" --> 
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section> <!-- seperating main contents -->
+<div class="mainB">
+	<h3 class="title"> Gallery </h3>
+		
+		<div class="galleries">
+			
+			<img class="gallery" src="images/outdoor150/outdoor150-1.jpg" alt="1">
+			<img class="gallery" src="images/outdoor150/outdoor150-2.jpg" alt="2">
+			<img class="gallery" src="images/outdoor150/outdoor150-3.jpg" alt="3">
+			<img class="gallery" src="images/outdoor150/outdoor150-4.jpg" alt="4">
+			<img class="gallery" src="images/outdoor150/outdoor150-5.jpg" alt="5">
+			<img class="gallery" src="images/outdoor150/outdoor150-6.jpg" alt="6">
+			<img class="gallery" src="images/outdoor150/outdoor150-7.jpg" alt="7">
+			<img class="gallery" src="images/outdoor150/outdoor150-8.jpg" alt="8">
+			<img class="gallery" src="images/outdoor150/outdoor150-9.jpg" alt="9">
+			<img class="gallery" src="images/outdoor150/outdoor150-10.jpg" alt="10">
+			<img class="gallery" src="images/outdoor150/outdoor150-11.jpg" alt="11">
+			<img class="gallery" src="images/outdoor150/outdoor150-12.jpg" alt="12">
+			<!-- my 3 images-->	
+			<img class="gallery" src="images/outdoor150/outdoor150-13.jpg" alt="13"> 
+			<img class="gallery" src="images/outdoor150/outdoor150-14.jpg" alt="14">
+			<img class="gallery" src="images/outdoor150/outdoor150-15.jpg" alt="15">
+		
+		</div>
+</div> <!-- closing for gallery mainB-->
+</section>
+
+
+
+<section> <!-- section for the credits-->
+	<div class="credits">
+		<h5> Credits </h5>
+		<p> Text content was obtained from appropriate Wikipedia pages. Images were obtained from unsplash.com, social media buttons were generated at iconmonstr.com and logos were created at logomaker.com. License agreements for images do not require citation for non-profit use. </p>
+	</div><!-- closing for credits --> 
+</section> <!-- I could not for the life of me remove the spaces between the text? like the top and bottom, stressed me out so i just left it -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+<div class="footer"> <!-- div parent for footer-->
+	
+	<div class="leftB"> <!-- left side-->
+	<p> <strong class="foot"> About Us </strong>
+	Who we are <br>
+	What we stand for <br>
+	How you can help <br>
+	</p>
+	</div>
+	
+	<div class="middleB"> <!-- middle side -->
+	<h1> Travel Time </h1>
+	
+	
+	<a href="https://x.com/traveltimeinc" title="Twitter" target="_blank"> 
+		<img src="images/socialmedia/twitter32.png" alt="Twitter">
+		</a>
+		
+	<a href="https://www.instagram.com/traveltimeinc/?hl=en" title="Instagram" target="_blank"> 
+		<img src="images/socialmedia/instagram32.png" alt="Instagram">
+		</a>
+	<a href="https://ca.pinterest.com/ideas/travel-time/910543637153/" title="Pinterest" target="_blank"> 
+		<img src="images/socialmedia/pinterest32.png" alt="Pinterest">
+		</a>
+	<a href="https://www.youtube.com/channel/UCUvl_ECjPffB-T6SAwwC7Bw" title="Youtube" target="_blank"> 
+		<img src="images/socialmedia/youtube32.png" alt="Youtube">
+		</a>
+	<a href="mailto:info@example.com" title="Email"  target="_blank"> 
+		<img src="images/socialmedia/emailat32.png" alt="Youtube">
+		</a>
+
+	</div>
+	
+	<div class="rightB"> <!-- right side-->
+		<div class="rightB1"> <!-- seminars-->
+		<p> <strong class="foot">Seminars </strong>
+		Trip Planning <br>
+		Hiking <br>
+		Camping </p> <br>
+		</div> 
+		
+		<div class="rightB2"> <!-- countries-->
+		<p><strong class="foot">Countries </strong>
+		Belgium <br>
+		Canada <br>
+		China <br>
+		Copenhagen <br>
+		Cyprus <br>
+		Greece <br>
+		India <br>
+		Italy <br>
+		Japan <br>
+		New Zealand <br>
+		Nigeria <br>
+		Turkey <br>
+		United States <br>
+		</p>
+		</div> <!-- CLOSING for countries-->
+	</div> <!-- CLOSING for right side-->
+</div><!-- CLOSING div for footer-->
+</footer> 
+		
+		
+		
+	</body>
+</html>

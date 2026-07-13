@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> <meta charset="UTF-8">
+		<title> Travel Seminars </title>
+
+		<!-- STATEMENT OF AUTHORSHIP 000964569
+			I patrick olaires certifiy that this is my own
+			material. no one has access to this, no ai has
+			been used in this process
+			
+			December 4th 2026, i am kind of exhuasted but
+			i might as well do my best
+		-->
+
+<!--_________STYLING BOX _______ -->
+<style>
+	
+	table, th, td, tr {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	
+	th, td, tr {
+		padding: 0.5em 1em 0.5em 1em;
+	}
+	
+	#sidehead {
+		background-color: #72B57D;
+		color: black;
+	}
+	
+	th {
+		background-color: #72B57D;
+		color: white;
+	}
+	
+	/* COLOURSSSS RAHHHHHH*/
+	
+	#SA {
+		background-color: #5993C7;
+	}
+	
+	#NA {
+		background-color: #B6D4CE;
+	}
+	
+	#AS {
+		background-color: #A19372;
+	}
+	
+	#AF {
+		background-color: #F4AF60;
+	}
+	
+	#blankspace {
+		background-color: white;
+	}
+	
+	#noseminar {
+		background-color: gray;
+		text-align: center;
+	}
+	.toplegend {
+		border: 0px solid black;
+		margin-bottom: 0.5em;
+		padding: 2px 2px 2px 2px;
+	}
+	
+	/* NAV STYLING RULES */
+	
+	nav {
+		position: sticky;
+		align-items: center;
+		margin: 2em 0 2em 0;
+	}
+	
+	ul, li {
+		display: inline; 
+	}
+	
+	li {
+		padding: 1em;
+		margin: 2em 2em 0 2em;
+		background-color: #B6D4CE;
+		border-radius: 20px 0 20px 0;
+		border: 2px solid black;
+		color: white;
+	}
+	
+	h1 {
+		text-align: center;
+		color: black;
+		background-color: #B6D4CE;
+	}
+	
+	.tabs {
+		align-items: center;
+		text-align: center;
+		margin-top: 1em;
+	}
+	
+	/* FOOTER */
+	
+	footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	
+	img {
+		align-items: center;
+		text-align: center;
+	}
+	
+	
+	
+</style>
+<!--_________ STYLINGB BOX________ -->
+
+	</head>
+	<body>
+	
+<nav>
+	<h1> Travel Seminars <br> 2023/2024</h1>
+		<div class="tabs">
+		<ul>
+			<li> About us</li>
+			<li> Countries</li>
+			<li> Seminars </li>
+			<li> Photos </li>
+			<li> Travel </li>
+		</ul>
+		</div>
+</nav>
+
+		
+
+	<table class="toplegend">
+		<legend>Legend: </legend>
+		<tr class="toplegend">
+			<td class="toplegend" id="NA">&nbsp;&nbsp;</td>
+			<td class="toplegend">&nbsp;North America&nbsp;</td>
+			<td class="toplegend" id="SA">&nbsp;&nbsp;</td>
+			<td class="toplegend">&nbsp;South America&nbsp;</td>
+			<td class="toplegend" id="AS">&nbsp;&nbsp;</td>
+			<td class="toplegend">&nbsp;Asia&nbsp;</td>
+			<td class="toplegend" id="AF">&nbsp;&nbsp;</td>
+			<td class="toplegend">&nbsp;Africa&nbsp;</td>
+		</tr >
+	</table>
+		  
+		
+	<table> <!-- MAIN TABLE -->
+	<caption> Schedule is subject to change</caption>
+		<tr> <!-- DAY/HEADER -->
+			<th> Day </th>
+			<th> 7 am - 9 am</th>
+			<th> 9 am - 11 am</th>
+			<th> 11 am - 12 pm</th>
+			<th> 12 pm - 2 pm</th>
+			<th> 2 pm - 4 pm</th>
+			<th> 6 pm - 8 pm</th>
+			<th> 8 pm - 10 pm</th>
+		</tr>
+
+		
+		<tr> <!-- MONDAY -->
+			<td id="sidehead"> Monday</td>
+			<td id="NA"> North America </td>
+			<td id="AS"> Asia </td>
+			<td colspan="4" id="AF"> Africa </td>
+			<!-- rowspanned
+			<td> </td>
+			<td> </td>
+			<td> </td> 
+			-->
+			<td rowspan="2" id="NA"> North America </td>
+		</tr>
+		
+		<tr> <!-- TUES -->
+			<td id="sidehead"> Tuesday</td>
+			<td rowspan="4" id="AF"> Africa </td>
+			<td colspan="2" id="NA"> North America </td>
+			<!--
+			<td> </td>
+			-->
+			<td id="blankspace"></td>
+			<td colspan="2" id="AS"> Asia</td>
+			<!-- <td> </td> from top-->
+		</tr>
+		
+		<tr> <!-- WED -->
+			<td id="sidehead"> Wednesday </td>
+			<!-- <td> </td> Africa2-->
+			<td rowspan="2" colspan="3" id="AS"> Asia</td>
+			<!-- asia rowspan
+			<td> </td>
+			<td> </td>
+			-->
+			<td id="NA"> North America</td>
+			<td rowspan="2" colspan="2" id="SA"> South America</td>
+		</tr>
+		
+		<tr> <!-- THURS -->
+			<td id="sidehead"> Thursday </td>
+			<!--<td> </td> Africa3-->
+			<!--asia colspan rowspan
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			-->
+			<td id="blankspace"> </td>
+			<!-- south america rowspan
+			<td> </td>
+			<td> </td> -->
+		</tr>
+		
+		<tr> <!-- FRI -->
+			<td id="sidehead"> Friday </td>
+			<!-- <td> </td> Africa4-->
+			<td colspan="5" id="SA"> South America</td>
+			<!-- <td> </td> southamericarowspan
+			<td> </td>
+			<td> </td>
+			<td> </td> -->
+			<td id="noseminar"> No seminars </td>
+		</tr>
+		
+		<tr> <!-- SAT -->
+			<td id="sidehead"> Saturday </td>
+			<td rowspan="2" id="SA"> South America</td>
+			<td id="blankspace"></td>
+			<td id="NA">  North America </td>
+			<td rowspan="2" id="AF"> Africa</td>
+			<td rowspan="2" id="SA"> South America </td>
+			<td rowspan="2" colspan="2" id="AS"> Asia </td>
+			<!-- <td> </td> asia rowspan -->
+		</tr>
+		
+		<tr> <!-- SUN -->
+			<td id="sidehead"> Sunday</td>
+			<!-- <td> </td> SouthMerica2-->
+			<td id="AF"> Africa</td>
+			<td id="blankspace"></td>
+			<!-- colspans
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			-->
+		</tr>
+		
+		
+		<tr> <!-- HOLIDAY -->
+			<td id="sidehead"> Holidays </td>
+			<td colspan="7" id="noseminar"> No seminars</td>
+			<!-- rowspan
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>-->
+		</tr>
+		<!-- Actual header -->
+	</table>
+
+<footer>
+	<img class="logo" src="images/outdooradventurehorizontal.png" alt="somelogo">
+</footer>
+
+
+
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
